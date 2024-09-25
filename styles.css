@@ -11,16 +11,6 @@ header {
     margin-bottom: 20px;
 }
 
-.background-image {
-    width: 100%;
-    height: auto;
-}
-
-.logo {
-    width: 150px;
-    height: auto;
-}
-
 .title {
     font-size: 24px;
     margin: 20px 0;
@@ -70,12 +60,12 @@ header {
     background-color: #218838;
 }
 
-.btn-Quatre {
-    background-color: #007bff;
+.btn-dev {
+    background-color: #dc3545; /* Rouge */
 }
 
-.btn-Quatre:hover {
-    background-color: #0056b3;
+.btn-dev:hover {
+    background-color: #c82333; /* Rouge plus sombre au survol */
 }
 
 footer {
