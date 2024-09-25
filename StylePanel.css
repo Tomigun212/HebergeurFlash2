@@ -1,0 +1,45 @@
+/* Styles pour la page */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 50px;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+
+
+.button-container {
+    margin: 20px 0;
+}
+
+.btn {
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s;
+}
+
+.btn-Panel {
+    background-color: #007bff;
+}
+
+.btn-Panel:hover {
+    background-color: #0056b3;
+}
+
+.btn-Quiter {
+    background-color: #007bff;
+}
+
+.btn-Quiter:hover {
+    background-color: #0056b3;
+	
+}
+footer {
+    margin-top: 20px;
+}
