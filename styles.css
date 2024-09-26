@@ -3,7 +3,6 @@ body {
     font-family: Arial, sans-serif;
     text-align: center;
     padding: 50px;
-    background-color: #f4f4f4;
     margin: 0;
     background-image:url(https://wallpaper.forfun.com/fetch/92/92b679d6417fc8c8fe988301e5951eb2.jpeg);
     background-size: cover; 
@@ -12,7 +11,6 @@ body {
     height: 100vh; 
     color: white;
     overflow: hidden;
-    color: white;
     
 }
 

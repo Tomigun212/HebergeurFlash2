@@ -3,7 +3,9 @@ body {
     font-family: Arial, sans-serif;
     text-align: center;
     padding: 50px;
-    background-color: #f4f4f4;
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
     margin: 0;
     color: white;
 }
