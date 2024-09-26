@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Non Trouvée - Erreur 404</title>
+    <style>
+        body {
+            display: flex;                /* Utilise flexbox pour centrer le contenu */
+            flex-direction: column;       /* Aligne les éléments verticalement */
+            justify-content: center;      /* Centre le contenu verticalement */
+            align-items: center;          /* Centre le contenu horizontalement */
+            height: 100vh;               /* Prend toute la hauteur de la fenêtre */
+            margin: 0;                   /* Supprime les marges par défaut */
+            font-family: 'Arial', sans-serif; /* Police de caractères */
+            color: #ffffff;              /* Couleur du texte */
+            text-align: center;           /* Centre le texte */
+            position: relative;           /* Pour l'image de fond */
+            background-image: url('https://wallpaper.forfun.com/fetch/92/92b679d6417fc8c8fe988301e5951eb2.jpeg'); /* Image de fond */
+            background-size: cover;       /* Fait en sorte que l'image couvre toute la page */
+            background-position: center;  /* Centre l'image */
+            filter: brightness(0.7);      /* Assombrit l'image de fond */
+        }
+        h1 {
+            font-size: 4em;              /* Taille de la police pour le titre */
+            margin: 0;                   /* Supprime les marges */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Ombre du texte */
+            animation: fadeIn 1s ease;  /* Animation d'apparition */
+        }
+        p {
+            font-size: 1.5em;            /* Taille de la police pour le texte */
+            margin: 20px 0;              /* Marge autour du texte */
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Ombre du texte */
+        }
+        a {
+            margin-top: 20px;            /* Marge au-dessus du lien */
+            text-decoration: none;        /* Supprime le soulignement du lien */
+            color: #ff4081;              /* Couleur du lien */
+            font-weight: bold;            /* Met le lien en gras */
+            font-size: 1.2em;            /* Taille de la police pour le lien */
+            padding: 10px 20px;          /* Ajoute du padding pour le bouton */
+            border: 2px solid #ff4081;   /* Bordure du bouton */
+            border-radius: 5px;          /* Arrondit les coins du bouton */
+            transition: background 0.3s, color 0.3s; /* Transition pour le changement de couleur */
+            cursor: pointer;              /* Change le curseur au survol */
+        }
+        a:hover {
+            background: #ff4081;         /* Change la couleur de fond au survol */
+            color: #ffffff;              /* Change la couleur du texte au survol */
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>404 - Page Non Trouvée</h1>
+    <p>Désolé, la page que vous cherchez n'existe pas.</p>
+    <a href="index.html">Retour à la page d'accueil</a>
+</body>
+</html>
+
+
