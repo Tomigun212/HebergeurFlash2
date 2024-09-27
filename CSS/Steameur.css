@@ -17,6 +17,10 @@ body {
     margin: 20px 0;
 }
 
+header {
+    margin-bottom: 20px;
+}
+
 .btn {
     border: none;
     border-radius: 5px;
@@ -28,20 +32,13 @@ body {
     transition: background-color 0.3s;
 }
 
-.btn-Panel {
-    background-color: #0dd3f6;
+
+.btn- {
+    background-color: #fb03ff;
 }
 
-.btn-Panel:hover {
-    background-color: #126eb1;
-}
-
-.btn-Quiter {
-    background-color: #ff0000;
-}
-
-.btn-Quiter:hover {
-    background-color: #b30000;
+.btn-:hover {
+    background-color: #480245;
 	
 }
 footer {

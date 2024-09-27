@@ -1,0 +1,58 @@
+/* Styles pour la page */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 50px;
+    margin: 0;
+    background-image:url(https://wallpaper.forfun.com/fetch/92/92b679d6417fc8c8fe988301e5951eb2.jpeg) ;
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    color: white;
+}
+
+
+
+.button-container {
+    margin: 20px 0;
+}
+
+.btn {
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s;
+}
+
+.btn-Panel {
+    background-color: #0dd3f6;
+}
+
+.btn-Panel:hover {
+    background-color: #126eb1;
+}
+
+.btn-Quiter {
+    background-color: #ff0000;
+}
+
+.btn-Quiter:hover {
+    background-color: #b30000;
+	
+}
+
+.btn-stream {
+    background-color: #fb03ff;
+}
+
+.btn-stream:hover {
+    background-color: #480245;
+	
+}
+footer {
+    margin-top: 20px;
+}
