@@ -3,10 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="CSS/Steameur.css" rel="stylesheet">
-    <title>Streameur FB</title>
+    <title>Suggérer des Streameurs</title>
+    <link href="/CSS/Streameur.css" rel="stylesheet">
 </head>
 <body>
-    
+    <header>
+        <h1>Suggérer des Streameurs</h1>
+    </header>
+
+    <main>
+        <section class="suggestions">
+            <div class="streameur">
+                <img src="streameur1.jpg" alt="Streameur 1">
+                <h2>Streameur 1</h2>
+                <a href="https://twitch.tv/streameur1" target="_blank">Voir la chaîne</a>
+            </div>
+            <div class="streameur">
+                <img src="streameur2.jpg" alt="Streameur 2">
+                <h2>Streameur 2</h2>
+                <a href="https://youtube.com/streameur2" target="_blank">Voir la chaîne</a>
+            </div>
+            <div class="streameur">
+                <img src="streameur3.jpg" alt="Streameur 3">
+                <h2>Streameur 3</h2>
+                <a href="https://twitch.tv/streameur3" target="_blank">Voir la chaîne</a>
+            </div>
+        </section>
+
+        <form action="#" method="POST">
+            <h2>Proposer un nouveau Streameur</h2>
+            <label for="name">Nom du Streameur:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="url">Lien de la chaîne:</label>
+            <input type="url" id="url" name="url" required>
+
+            <label for="image">Lien de l'image (optionnel):</label>
+            <input type="url" id="image" name="image">
+
+            <button type="submit">Soumettre</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mon Site Web. Tous droits réservés.</p>
+    </footer>
 </body>
 </html>
