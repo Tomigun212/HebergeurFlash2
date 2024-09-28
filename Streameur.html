@@ -3,50 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Suggérer des Streameurs</title>
-    <link href="/CSS/Streameur.css" rel="stylesheet">
+    <title>Streameur Suggérer</title>
+    <link rel="stylesheet" href="stream.css">
 </head>
 <body>
     <header>
-        <h1>Suggérer des Streameurs</h1>
+        <h1>Streameur Suggérer</h1>
     </header>
 
     <main>
-        <section class="suggestions">
-            <div class="streameur">
-                <img src="streameur1.jpg" alt="Streameur 1">
-                <h2>Streameur 1</h2>
-                <a href="https://twitch.tv/streameur1" target="_blank">Voir la chaîne</a>
+        <div class="carousel-container">
+            <div class="carousel">
+                <div class="streameur">
+                    <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/267c4ae7-3427-4468-a30d-4583d0410892-profile_image-70x70.png" alt="Streameur 1">
+                    <h2>Aenot</h2>
+                    <a href="https://www.twitch.tv/aenot" target="_blank">Voir la chaîne</a>
+                </div>
+                <div class="streameur">
+                    <img src="streameur2.jpg" alt="Streameur 2">
+                    <h2>Streameur 2</h2>
+                    <a href="https://youtube.com/streameur2" target="_blank">Voir la chaîne</a>
+                </div>
+                <div class="streameur">
+                    <img src="streameur3.jpg" alt="Streameur 3">
+                    <h2>Streameur 3</h2>
+                    <a href="https://twitch.tv/streameur3" target="_blank">Voir la chaîne</a>
+                </div>
+                <div class="streameur">
+                    <img src="streameur4.jpg" alt="Streameur 4">
+                    <h2>Streameur 4</h2>
+                    <a href="https://twitch.tv/streameur4" target="_blank">Voir la chaîne</a>
+                </div>
+                <div class="streameur">
+                    <img src="streameur5.jpg" alt="Streameur 5">
+                    <h2>Streameur 5</h2>
+                    <a href="https://youtube.com/streameur5" target="_blank">Voir la chaîne</a>
+                </div>
+                <div class="streameur">
+                    <img src="streameur6.jpg" alt="Streameur 6">
+                    <h2>Streameur 6</h2>
+                    <a href="https://twitch.tv/streameur6" target="_blank">Voir la chaîne</a>
+                </div>
             </div>
-            <div class="streameur">
-                <img src="streameur2.jpg" alt="Streameur 2">
-                <h2>Streameur 2</h2>
-                <a href="https://youtube.com/streameur2" target="_blank">Voir la chaîne</a>
-            </div>
-            <div class="streameur">
-                <img src="streameur3.jpg" alt="Streameur 3">
-                <h2>Streameur 3</h2>
-                <a href="https://twitch.tv/streameur3" target="_blank">Voir la chaîne</a>
-            </div>
-        </section>
 
-        <form action="#" method="POST">
-            <h2>Proposer un nouveau Streameur</h2>
-            <label for="name">Nom du Streameur:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="url">Lien de la chaîne:</label>
-            <input type="url" id="url" name="url" required>
-
-            <label for="image">Lien de l'image (optionnel):</label>
-            <input type="url" id="image" name="image">
-
-            <button type="submit">Soumettre</button>
-        </form>
+            <!-- Flèches de navigation -->
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
     </main>
 
     <footer>
-        <p>&copy; 2024 Mon Site Web. Tous droits réservés.</p>
     </footer>
+
+    <script src="streameur.js"></script>
 </body>
 </html>
+

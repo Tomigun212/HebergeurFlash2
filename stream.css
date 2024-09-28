@@ -1,0 +1,148 @@
+/* Styles généraux */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f3;
+        background-image:url(https://wallpaper.forfun.com/fetch/92/92b679d6417fc8c8fe988301e5951eb2.jpeg);
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* En-tête */
+header {
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+/* Carrousel */
+.carousel-container {
+    position: relative;
+    max-width: 1200px;
+    margin: 60px auto;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.8s ease-in-out;
+}
+
+.streameur {
+    min-width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 12px 12px 24px #bebebe, -12px -12px 24px #ffffff;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+}
+
+.streameur img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+    transition: transform 0.3s;
+}
+
+.streameur h2 {
+    margin: 20px 0;
+    font-size: 2rem;
+    color: #333;
+}
+
+.streameur a {
+    display: inline-block;
+    background: linear-gradient(45deg, #6C63FF, #897CFF);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: background 0.3s, transform 0.3s;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.streameur a:hover {
+    background: linear-gradient(45deg, #897CFF, #6C63FF);
+    transform: translateY(-3px);
+    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Effet hover sur les cartes */
+.streameur:hover {
+    transform: scale(1.03);
+    box-shadow: 14px 14px 28px #bebebe, -14px -14px 28px #ffffff;
+}
+
+.streameur:hover img {
+    transform: scale(1.1);
+}
+
+/* Flèches de navigation */
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    border: none;
+    padding: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 2rem;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, transform 0.3s;
+}
+
+button.prev {
+    left: 20px;
+}
+
+button.next {
+    right: 20px;
+}
+
+button.prev:hover, button.next:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+    transform: scale(1.1);
+}
+
+/* Transition douce pour le carrousel */
+.carousel {
+    transition: transform 0.8s ease-in-out;
+}
+
+/* Responsive: ajuster la largeur des cartes et la taille des flèches pour les petits écrans */
+@media screen and (max-width: 768px) {
+    .carousel-container {
+        max-width: 90%;
+    }
+
+    button.prev, button.next {
+        padding: 15px;
+        font-size: 1.5rem;
+    }
+}
+
+
+
+
+
