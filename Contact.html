@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contactez-nous</title>
-    <link rel="stylesheet" href="CSS/StyleCont.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
@@ -40,7 +40,7 @@
             const email = document.getElementById('email').value;
             const message = document.getElementById('message').value;
 
-            const webhookURL = 'https://discord.com/api/webhooks/1290013452374511667/sSQBS4x332jHjM_F-lKonXvpUHSf1nekyPTIOFveo8aHCooRqrEtUEcP45S64T909b41'; // Remplace avec l'URL de ton webhook
+            const webhookURL = 'YOUR_DISCORD_WEBHOOK_URL'; // Remplace avec l'URL de ton webhook
 
             const payload = {
                 content: `**Nouveau message de contact**\n**Nom :** ${name}\n**Email :** ${email}\n**Message :** ${message}`

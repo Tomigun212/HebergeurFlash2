@@ -1,0 +1,3 @@
+Developpement page a faire 
+Page password Ajouter un weebhook avec une zone de texte qui se connecte avec un pseudo pour dire qui ses connecter
+est sa l'envoie sur le discord
