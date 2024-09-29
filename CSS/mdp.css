@@ -1,10 +1,7 @@
-/* Styles pour la page mot de passe */
+/* Centrage du conteneur */
 body {
-    font-family: 'Arial', sans-serif;
-    background-image: url(https://wallpaper.forfun.com/fetch/92/92b679d6417fc8c8fe988301e5951eb2.jpeg);
-    background-size: cover; 
-    background-repeat: no-repeat; 
-    background-position: center; 
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,47 +9,48 @@ body {
     margin: 0;
 }
 
-.container {
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+.login-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    width: 300px;
 }
 
-h1 {
-    font-size: 24px;
-    color: #333;
+h2 {
     margin-bottom: 20px;
 }
 
-input[type="password"] {
+label {
+    display: block;
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+input {
     width: 100%;
     padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
     font-size: 16px;
 }
 
 button {
-    background-color: #1d2b64;
+    background-color: #4CAF50;
     color: white;
     padding: 10px 20px;
     border: none;
-    border-radius: 5px;
-    font-size: 16px;
+    border-radius: 4px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #f8cdda;
-    color: #1d2b64;
+    background-color: #45a049;
 }
 
-.error {
-    color: red;
-    font-size: 14px;
-    margin-top: 10px;
+#message {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
 }
