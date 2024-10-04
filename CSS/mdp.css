@@ -1,14 +1,17 @@
 /* Centrage du conteneur */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    text-align: center;
+    padding: 50px;
     margin: 0;
-}
+    background-image:url(https://wallpaper.forfun.com/fetch/92/92b679d6417fc8c8fe988301e5951eb2.jpeg) ;
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    height: 100vh;
+    color: white;
 
+    
 .login-container {
     background-color: white;
     padding: 20px;
