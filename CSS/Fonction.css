@@ -1,67 +1,156 @@
-/* Styles pour la page */
+/* Styles généraux */
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    padding: 50px;
-    margin: 0;
+    font-family: 'Arial', sans-serif;
     background-image:url(https://wallpaper.forfun.com/fetch/92/92b679d6417fc8c8fe988301e5951eb2.jpeg) ;
     background-size: cover; 
     background-repeat: no-repeat; 
     background-position: center; 
+    height: 100vh;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+/* Style de l'en-tête */
+header {
     color: white;
+    padding: 50px 0;
+    text-align: center;
 }
 
-
-
-.button-container {
-    margin: 20px 0;
+header h1 {
+    font-size: 3rem;
+    margin: 0;
+    letter-spacing: 2px;
+    animation: fadeInDown 1s ease-out;
 }
 
+header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    animation: fadeInUp 1s ease-out;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Section des boutons */
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 40px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+/* Style des boutons */
 .btn {
+    background: linear-gradient(45deg, #ff416c, #ff4b2b);
+    color: white;
+    padding: 20px 30px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: bold;
+    border-radius: 50px;
+    box-shadow: 0 8px 15px rgba(255, 65, 108, 0.3);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.btn:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: all 0.6s ease;
+    opacity: 0;
+    z-index: -1;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.btn:hover:before {
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+}
+
+.btn:hover {
+    box-shadow: 0 12px 25px rgba(255, 65, 108, 0.5);
+    transform: translateY(-5px);
+}
+
+/* Animation des boutons */
+@keyframes buttonGlow {
+    0%, 100% {
+        box-shadow: 0 0 10px rgba(255, 65, 108, 0.4), 0 0 20px rgba(255, 75, 43, 0.6);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(255, 65, 108, 0.7), 0 0 30px rgba(255, 75, 43, 0.9);
+    }
+}
+
+.btn:hover {
+    animation: buttonGlow 1.5s infinite alternate;
+}
+
+/* Style du bouton de sortie */
+.exit-button-container {
+    margin-top: 30px;
+}
+
+.exit-btn {
+    background-color: #dc3545; /* Rouge */
+    color: white;
+    padding: 15px 25px;
     border: none;
-    border-radius: 5px;
-    color: #fff;
-    padding: 10px 20px;
-    font-size: 16px;
+    border-radius: 50px;
+    font-size: 1.5rem;
+    font-weight: bold;
     cursor: pointer;
-    margin: 10px;
-    transition: background-color 0.3s;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.btn-Panel {
-    background-color: #0dd3f6;
+.exit-btn:hover {
+    background-color: #c82333; /* Rouge plus foncé */
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }
 
-.btn-Panel:hover {
-    background-color: #126eb1;
-}
-
-.btn-Quiter {
-    background-color: #ff0000;
-}
-
-.btn-Quiter:hover {
-    background-color: #b30000;
-	
-}
-
-.btn-stream {
-    background-color: #fb03ff;
-}
-
-.btn-stream:hover {
-    background-color: #480245;
-	
-}
-
-.btn-dev {
-    background-color: #3ee30b;
-}
-
-.btn-dev:hover {
-    background-color: #0a6818;
-}
-
+/* Style du pied de page */
 footer {
-    margin-top: 20px;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
 }
+
+

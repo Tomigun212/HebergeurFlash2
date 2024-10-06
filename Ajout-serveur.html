@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nouvelles Fonctionnalités Serveur</title>
+    <!-- Lien vers le fichier CSS séparé -->
+    <link rel="stylesheet" href="CSS/Ajout.css">
+</head>
+<body>
+
+<header>
+    <h1>Nouvelles Fonctionnalités</h1>
+</header>
+
+<main>
+
+    <div class="slider">
+
+        <!-- Fonctionnalité 1 -->
+        <div class="slide active">
+            <h2>Nouvelle Carte de Jeu</h2>
+            <p>Nous avons ajouté une nouvelle carte excitante qui offre de nouveaux défis et des paysages époustouflants. Explorez des montagnes enneigées, des forêts denses et des déserts arides.</p>
+            <img src="images/nouvelle-carte.jpg" alt="Nouvelle Carte">
+        </div>
+
+        <!-- Fonctionnalité 2 -->
+        <div class="slide">
+            <h2>Système de Combat Révisé</h2>
+            <p>Le système de combat a été totalement repensé pour offrir des combats plus dynamiques et immersifs. Utilisez de nouvelles techniques et des compétences améliorées pour vaincre vos ennemis.</p>
+            <img src="images/combat-system.jpg" alt="Système de Combat">
+        </div>
+
+        <!-- Fonctionnalité 3 -->
+        <div class="slide">
+            <h2>Mode Multijoueur Amélioré</h2>
+            <p>Le mode multijoueur a reçu de nombreuses améliorations, y compris un matchmaking plus rapide, de nouvelles cartes pour les affrontements, et des options de personnalisation étendues.</p>
+            <img src="images/multiplayer.jpg" alt="Mode Multijoueur">
+        </div>
+
+        <!-- Fonctionnalité 4 -->
+        <div class="slide">
+            <h2>Personnalisation des Personnages</h2>
+            <p>Créez votre personnage unique avec de nouvelles options de personnalisation, y compris des tenues, des accessoires et des capacités spéciales.</p>
+            <img src="images/personnalisation.jpg" alt="Personnalisation des Personnages">
+        </div>
+
+        <!-- Flèches de navigation -->
+        <a class="prev" onclick="showPrevSlide()">&#10094;</a>
+        <a class="next" onclick="showNextSlide()">&#10095;</a>
+
+    </div>
+
+    <!-- Retour au menu -->
+    <div class="button-container">
+        <button onclick="window.location.href='index.html'">Retour au menu principal</button>
+    </div>
+
+</main>
+
+<script>
+    let currentIndex = 0;
+    const slides = document.querySelectorAll('.slide');
+
+    function showNextSlide() {
+        slides[currentIndex].classList.remove('active');
+        currentIndex = (currentIndex + 1) % slides.length; // Passe à la prochaine slide
+        slides[currentIndex].classList.add('active');
+    }
+
+    function showPrevSlide() {
+        slides[currentIndex].classList.remove('active');
+        currentIndex = (currentIndex - 1 + slides.length) % slides.length; // Passe à la slide précédente
+        slides[currentIndex].classList.add('active');
+    }
+
+    // Défilement automatique toutes les 15 secondes
+    setInterval(showNextSlide, 15000); // 15000 millisecondes = 15 secondes
+</script>
+
+</body>
+</html>
+
+
+
+
+

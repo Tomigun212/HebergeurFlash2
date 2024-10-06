@@ -63,6 +63,22 @@ body {
     background-color: #0a6818;
 }
 
+.btn-Ajout {
+    background-color: #053efc;
+}
+
+.btn-Ajout:hover {
+    background-color: #071546;
+}
+
+.btn-New {
+    background-color: #ef04cc;
+}
+
+.btn-New:hover {
+    background-color: #f508ae;
+}
+
 footer {
     margin-top: 20px;
 }

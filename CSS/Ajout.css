@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image:url(https://wallpaper.forfun.com/fetch/92/92b679d6417fc8c8fe988301e5951eb2.jpeg) ;
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    margin: 20px;
+    text-align: center;
+}
+
+h2, h3 {
+    color: #444;
+}
+
+/* Slider Container */
+.slider {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* Slide */
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 2s ease-in-out; /* Animation de fondu */
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Active Slide */
+.slide.active {
+    opacity: 1;
+    position: relative; /* Active slide must be shown in the normal flow */
+}
+
+/* Images et Vidéos dans les slides */
+.slide img, .slide video {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Bouton Retour */
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+.button-container button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.button-container button:hover {
+    background-color: #218838;
+}
+
+/* Flèches de navigation */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* Hover effects for the arrows */
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
